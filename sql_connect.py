@@ -31,8 +31,7 @@ def sql_fetch(query):
     return data
 
 def sql_insert(query):
-    """ Function executes query and returns all fetched data. 
-        Returns int 0 if connection is not established"""
+    """ Function executes query (Insert or update) Returns nothing"""
     try:
         cnx = mysql.connector.connect(user = user, password= password,
                                     host= host,
